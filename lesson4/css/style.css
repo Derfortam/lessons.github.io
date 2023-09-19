@@ -1,0 +1,64 @@
+@import url("reset.css");
+
+
+.text span {
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+.navigation h2 {
+    color: black;
+}
+
+h3 {
+    color: cadetblue;
+}
+
+li a {
+    color: coral;
+}
+
+.img p {
+    color: darkgreen;
+}
+
+
+
+/* селектор - запит елемента в html файлі 
+до якого підключений даний файл css*/
+
+/* типи селекторів  
+№0. * - до всіх об'єктів на сторінці
+*{
+    css-parametry;
+} 
+
+№1 - селектор тегу
+p{} or div{}
+
+№2 - селектор класу
+.block{}   or .list{}
+
+№3 - id 
+#id-this{} (один-єдиний унікальний об'єкт) 
+*/
+/* div.text {
+    /* color: red; */
+
+
+/* .page__text.text {
+    /* color: rgb(78, 17, 192); */
+
+
+/* li,
+.text,
+.lesson {
+    /* color: red; */
+
+
+/* .lesson a {
+    color: green;
+} */
