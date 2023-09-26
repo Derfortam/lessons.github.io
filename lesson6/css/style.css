@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+@import url("reset.css");
+
+
+body {}
+
+.head p {
+    margin: 0 0 30px 50px;
+    font-size: 30px;
+}
+
+.main-title {
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 20px 0 20px 50px;
+    color: #6B77E5;
+}
+
+.table-content {
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.block-1 {
+    margin: 50px 0 0 50px;
+    /* margin-left: 50px; */
+}
+
+.photo-1 {
+    padding-right: 23px;
+    max-width: 715px;
+    height: auto;
+    margin-bottom: 23px;
+}
+
+.title {
+    color: #37393F;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.27;
+    max-width: 692px;
+    margin-bottom: 3px;
+}
+
+.first-section,
+.second-section {
+    max-width: 692px;
+}
+
+.first-section p {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    max-width: 692px;
+    text-align: justify;
+    margin-bottom: 42px;
+}
+
+.sub-title {
+    color: #6B77E5;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    max-width: 692px;
+    margin-bottom: 12px;
+}
+
+.second-section p {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.44;
+    max-width: 692px;
+    text-align: justify;
+    margin-bottom: 38px;
+}
+
+.text-right {
+    display: inline-block;
+}
+
+.img-2 {
+    max-width: 392px;
+    height: auto;
+}
+
+.text-right {
+    margin-left: 13px;
+}
+
+.title-2 {
+    color: #37393F;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.24;
+    max-width: 156px;
+    margin-bottom: 15px;
+}
+
+.sub-title-2 {
+    color: #40DDB6;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.25;
+    max-width: 332px;
+    margin-bottom: 23.5px;
+}
+
+.list li {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-left: 48px;
+    margin-bottom: 35px;
+}
+
+.block-2 {
+    margin: 50px 90px 0;
+
+}
+
+.left-text {
+    max-width: 563px;
+    display: inline-block;
+}
+
+.left-text h2 {
+    color: #D06B00;
+    font-size: 28px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 21px 0 13px 0;
+    /* margin-top: 21px;
+    margin-bottom: 13px; */
+}
+
+.title-block2 {
+    color: #0E333D;
+    font-size: 59px;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+.left-text p {
+    color: #474747;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 25px 0 21px 0;
+}
+
+.img-3 {
+    margin: 0 22px 0 38px;
+}
+
+.img-3,
+.img-4 {
+    max-width: 273px;
+    height: auto;
+}
+
+
+.block-3 {
+    padding: 30px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.block-3 h2 {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+.some-text p {
+    font-size: 25px;
+    color: #37393F;
+    word-spacing: 10px;
+    color: #474747;
+}
+
+.first-p {
+    max-width: 200px;
+    max-height: 150px;
+    overflow: auto;
+    /* color: #D06B00; */
+}
+
+.second-p {
+    max-width: 200px;
+    max-height: 150px;
+    overflow: hidden;
+    margin-left: 100px;
+    /* color: #0155f0; */
+}
+
+.third-p {
+    max-width: 200px;
+    max-height: 150px;
+    overflow: scroll;
+    margin-left: 100px;
+    /* color: #881906; */
+}
+
+.first-p,
+.second-p,
+.third-p {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.last-photo {
+    margin: -60px 0 0 100px;
+    max-width: 300px;
+    height: auto;
+}
+
+.footer {
+    max-width: 1100px;
+    background-color: #37393F;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2.last-title {
+    text-decoration: underline;
+    font-size: 30px;
+    color: #a6ace4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.foot-list {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.last-ul a {
+    color: #40DDB6;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.last-ul li {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.last-ul-2 a {
+    color: #40DDB6;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.last-ul-2 li {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.last-ul,
+.last-ul-2 {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+/*
+Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або 
+значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black
+*/
