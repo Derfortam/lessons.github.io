@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Lesson </title>
+    <link rel="shortcut icon" href="img/dun.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header header--fixed">
+
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <div class="page__body">
+                    <h2 class="page__title">Welcome to the Enigma Core</h2>
+                    <div class="page__encrypt encrypt">
+                        <h3 class="encrypt__title">Encrypt</h3>
+
+                        <form action="#" method="get" enctype="multipart/form-data">
+                            <div class="encrypt__rotors">
+                                <div class="encrypt__block">
+                                    <label for="rotor1">Rotor 1 Position (1-26):</label>
+                                    <input required type="number" id="rotor1" min="1" max="26">
+                                </div>
+
+                                <div class="encrypt__block">
+                                    <label for="rotor2">Rotor 2 Position (1-26):</label>
+                                    <input required type="number" id="rotor2" min="1" max="26">
+                                </div>
+                            </div>
+                            <div class="encrypt__textarea">
+                                <textarea name="encryptMessage" id="messageToEncrypt"></textarea>
+                                <div class="encrypt__buttons">
+                                    <button class="encrypt__button" onclick="getEncrypt(event)">Submit</button>
+                                    <button class="encrypt__button" type="reset" onclick="resetEn()">Reset</button>
+
+                                </div>
+                            </div>
+
+                            <div class="encrypt__text">
+                                <p id="textOut"></p>
+                            </div>
+                            <div class="encrypt__copy">
+                                <button class="encrypt__button-copy" type="button" onclick="copyEnc()">Copy</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="page__decrypt decrypt">
+                        <h3 class="encrypt__title">Decrypt</h3>
+                        <form action="#" method="get" enctype="multipart/form-data">
+                            <div class="decrypt__rotors">
+                                <div class="decrypt__block">
+                                    <label for="rotor1-1">Rotor 1 Position (1-26):</label>
+                                    <input required type="number" id="rotor1-1" min="1" max="26">
+                                </div>
+
+                                <div class="decrypt__block">
+                                    <label for="rotor2-2">Rotor 2 Position (1-26):</label>
+                                    <input required type="number" id="rotor2-2" min="1" max="26">
+                                </div>
+                            </div>
+                            <div class="decrypt__textarea">
+                                <textarea name="decryptMessage" id="decryptMessage"></textarea>
+                                <div class="decrypt__buttons">
+                                    <button class="decrypt__button" onclick="getDecrypt(event)">Submit</button>
+                                    <button class="decrypt__button" type="reset" onclick="resetDec()">Reset</button>
+                                </div>
+                            </div>
+
+                            <div class="decrypt__text">
+                                <p id="decryptTextOut"></p>
+                            </div>
+                            <div class="decrypt__copy">
+                                <button class="decrypt__button-copy" type="button" onclick="copyDec()">Copy</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </div>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
