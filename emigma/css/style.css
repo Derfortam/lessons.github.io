@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input,
+select {
+  border-radius: 0;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Bold.woff2") format("woff2"), url("../fonts/causten/Causten-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Semi-Bold.woff2") format("woff2"), url("../fonts/causten/Causten-Semi-Bold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Medium.woff2") format("woff2"), url("../fonts/causten/Causten-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Regular.woff2") format("woff2"), url("../fonts/causten/Causten-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/core_sans/CoreSansC-55Medium.woff2") format("woff2"), url("../fonts/core_sans/CoreSansC-55Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/core_sans/CoreSansC-65Bold.woff2") format("woff2"), url("../fonts/core_sans/CoreSansC-65Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/core_sans/CoreSansC-85Heavy.woff2") format("woff2"), url("../fonts/core_sans/CoreSansC-85Heavy.woff") format("woff");
+  font-weight: 800;
+}
+/* Causten 500 700 600 400 */
+/* Core Sans 65  500 600  700 800 */
+/* Montserrat 800 */
+/*
+Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або 
+значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black
+*/
+body {
+  background-color: #333;
+  font-family: Core Sans C, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+}
+
+.wrapper {
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 1267px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page {
+  padding-top: 150px;
+}
+.page__container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/page/ww2.webp") 0 0/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/page/ww2.webp") 0 0/cover no-repeat;
+}
+.page__title {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.encrypt {
+  margin-bottom: 30px;
+}
+.encrypt__title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.encrypt__rotors {
+  margin-bottom: 20px;
+}
+.encrypt__block:not(:last-child) {
+  margin-bottom: 20px;
+}
+.encrypt__block input {
+  height: 40px;
+  width: 100px;
+  padding: 0 0 0 20px;
+  border-radius: 3px;
+}
+.encrypt__textarea {
+  margin-bottom: 30px;
+}
+.encrypt__textarea textarea {
+  resize: vertical;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-height: 150px;
+}
+.encrypt__buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 40px;
+}
+.encrypt__button {
+  display: block;
+  background-color: blueviolet;
+  padding: 10px 20px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (hover: hover) {
+  .encrypt__button:hover {
+    background-color: rgb(76, 31, 119);
+  }
+}
+.encrypt__text {
+  background-color: burlywood;
+  min-height: 150px;
+  min-width: 100px;
+  padding: 20px;
+  color: #000;
+}
+
+.decrypt__rotors {
+  margin-bottom: 20px;
+}
+.decrypt__block:not(:last-child) {
+  margin-bottom: 20px;
+}
+.decrypt__block input {
+  height: 40px;
+  width: 100px;
+  padding: 0 0 0 20px;
+  border-radius: 3px;
+}
+.decrypt__textarea {
+  margin-bottom: 30px;
+}
+.decrypt__textarea textarea {
+  resize: vertical;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-height: 150px;
+}
+.decrypt__buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 40px;
+}
+.decrypt__button {
+  display: block;
+  background-color: blueviolet;
+  padding: 10px 20px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (hover: hover) {
+  .decrypt__button:hover {
+    background-color: rgb(76, 31, 119);
+  }
+}
+.decrypt__text {
+  background-color: burlywood;
+  min-height: 150px;
+  min-width: 100px;
+  padding: 20px;
+  color: #000;
+}
