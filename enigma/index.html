@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Lesson </title>
+    <link rel="shortcut icon" href="img/en.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header header--fixed">
+
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <div class="page__body">
+                    <h2 class="page__title">Welcome to the Enigma Core</h2>
+                    <div class="page__encrypt-display">
+                        Click to Encrypt
+                    </div>
+                    <div class="page__encrypt encrypt">
+                        <h3 class="encrypt__title">Encrypt</h3>
+
+                        <form action="#" method="get" enctype="multipart/form-data">
+                            <div class="encrypt__rotors">
+                                <div class="encrypt__block">
+                                    <label for="rotor1">Rotor 1 Position (1-26):</label>
+                                    <input required type="number" id="rotor1" min="1" max="26">
+                                    <!-- <img src="img/page/wh.png" alt="img" class="encrypt__rotor-img"> -->
+                                    <div class="encrypt__block-wheel">
+                                        <img id="wheel1" src="img/page/wheel_1.png" alt="wheel"
+                                            class="encrypt__img-wheel">
+                                    </div>
+                                    <audio id="clickSound">
+                                        <source src="sound/tik.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+
+                                </div>
+
+
+                                <div class="encrypt__block">
+                                    <label for="rotor2">Rotor 2 Position (1-26):</label>
+                                    <input required type="number" id="rotor2" min="1" max="26">
+                                    <div class="encrypt__block-wheel">
+                                        <img id="wheel2" src="img/page/wheel_1.png" alt="wheel"
+                                            class="encrypt__img-wheel">
+                                    </div>
+                                    <audio id="clickSound2">
+                                        <source src="sound/tik.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </div>
+                            <div class="encrypt__textarea">
+                                <h2 class="encrypt__title-textarea">Enter your text:</h2>
+                                <textarea name="encryptMessage" id="messageToEncrypt"></textarea>
+                                <div class="encrypt__buttons">
+                                    <button class="encrypt__button" onclick="getEncrypt(event)">Submit <img
+                                            src="img/page/key1.svg" alt="enc" class="encrypt__button-img"></button>
+                                    <button class="encrypt__button" type="reset" onclick="resetEn()">Reset<img
+                                            src="img/page/reset.svg" alt="enc" class="encrypt__button-img"></button>
+
+                                </div>
+                            </div>
+
+                            <div class="encrypt__text">
+                                <p id="textOut"></p>
+                            </div>
+                            <div class="encrypt__copy">
+                                <button class="encrypt__button-copy" type="button" onclick="copyEnc()">Copy <img
+                                        src="img/page/copy.svg" alt="enc" class="encrypt__button-img"></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="page__decrypt-display">
+                        Click to Decrypt
+                    </div>
+                    <div class="page__decrypt decrypt">
+                        <h3 class="encrypt__title">Decrypt</h3>
+                        <form action="#" method="get" enctype="multipart/form-data">
+                            <div class="decrypt__rotors">
+                                <div class="decrypt__block">
+                                    <label for="rotor1-1">Rotor 1 Position (1-26):</label>
+                                    <input required type="number" id="rotor1-1" min="1" max="26">
+                                    <div class="decrypt__block-wheel">
+                                        <img id="wheel3" src="img/page/wheel_1.png" alt="wheel"
+                                            class="decrypt__img-wheel">
+                                    </div>
+                                    <audio id="clickSound3">
+                                        <source src="sound/tik.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+
+                                <div class="decrypt__block">
+                                    <label for="rotor2-2">Rotor 2 Position (1-26):</label>
+                                    <input required type="number" id="rotor2-2" min="1" max="26">
+                                    <div class="decrypt__block-wheel">
+                                        <img id="wheel4" src="img/page/wheel_1.png" alt="wheel"
+                                            class="decrypt__img-wheel">
+                                    </div>
+                                    <audio id="clickSound4">
+                                        <source src="sound/tik.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </div>
+                            <div class="decrypt__textarea">
+                                <textarea name="decryptMessage" id="decryptMessage"></textarea>
+                                <div class="decrypt__buttons">
+                                    <button class="decrypt__button" onclick="getDecrypt(event)">Submit <img
+                                            src="img/page/decrypt.svg" alt="enc" class="decrypt__button-img"></button>
+                                    <button class="decrypt__button" type="reset" onclick="resetDec()">Reset <img
+                                            src="img/page/reset.svg" alt="enc" class="decrypt__button-img"></button>
+                                </div>
+                            </div>
+
+                            <div class="decrypt__text">
+                                <p id="decryptTextOut"></p>
+                            </div>
+                            <div class="decrypt__copy">
+                                <button class="decrypt__button-copy" type="button" onclick="copyDec()">Copy <img
+                                        src="img/page/copy.svg" alt="enc" class="decrypt__button-img"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </div>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

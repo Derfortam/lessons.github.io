@@ -1,0 +1,535 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input,
+select {
+  border-radius: 0;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Bold.woff2") format("woff2"), url("../fonts/causten/Causten-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Semi-Bold.woff2") format("woff2"), url("../fonts/causten/Causten-Semi-Bold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Medium.woff2") format("woff2"), url("../fonts/causten/Causten-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Regular.woff2") format("woff2"), url("../fonts/causten/Causten-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/core_sans/CoreSansC-55Medium.woff2") format("woff2"), url("../fonts/core_sans/CoreSansC-55Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/core_sans/CoreSansC-65Bold.woff2") format("woff2"), url("../fonts/core_sans/CoreSansC-65Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/core_sans/CoreSansC-85Heavy.woff2") format("woff2"), url("../fonts/core_sans/CoreSansC-85Heavy.woff") format("woff");
+  font-weight: 800;
+}
+/* Causten 500 700 600 400 */
+/* Core Sans 65  500 600  700 800 */
+/* Montserrat 800 */
+/*
+Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або 
+значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black
+*/
+body {
+  background-color: #333;
+  font-family: Core Sans C, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+}
+
+.wrapper {
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 1267px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page__container {
+  padding: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4))), url("../img/page/fire.jpeg") center 0/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("../img/page/fire.jpeg") center 0/cover no-repeat;
+}
+.page__body {
+  padding-top: 50px;
+}
+.page__title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+.page__decrypt-display, .page__encrypt-display {
+  background-color: #1b1008;
+  padding: 30px 0;
+  max-width: 400px;
+  font-size: 35px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #c9c9c9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+@media (hover: hover) {
+  .page__decrypt-display:hover, .page__encrypt-display:hover {
+    background-color: #000000;
+  }
+}
+.page__encrypt {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.page__decrypt {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.encrypt-open .page__encrypt {
+  visibility: visible;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  height: 100%;
+}
+
+.decrypt-open .page__decrypt {
+  visibility: visible;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  height: 100%;
+}
+
+.encrypt {
+  text-align: center;
+  border-bottom: 2px solid #c9c9c9;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.encrypt__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.encrypt__rotors {
+  margin-bottom: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.encrypt__block {
+  background-color: #1b1008;
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.encrypt__block label {
+  line-height: 1.5;
+}
+.encrypt__block input {
+  height: 40px;
+  width: 100px;
+  padding: 0 0 0 20px;
+  border-radius: 3px;
+  background-color: #C98A39;
+  -webkit-box-shadow: 10px 10px 10px 1px #000;
+          box-shadow: 10px 10px 10px 1px #000;
+}
+.encrypt__block .encrypt__rotor-img {
+  position: absolute;
+  top: -15px;
+}
+.encrypt__block-wheel {
+  max-width: 200px;
+  overflow: hidden;
+  height: 95px;
+}
+.encrypt__img-wheel {
+  position: relative;
+  top: 0;
+  aspect-ratio: 154/154;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+@-webkit-keyframes rotate-wheel {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-wheel {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.encrypt__textarea {
+  margin-bottom: 30px;
+}
+.encrypt__textarea h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.encrypt__textarea textarea {
+  border-radius: 4px;
+  border: 2px solid #1b1008;
+  resize: vertical;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  min-height: 150px;
+  background-color: #C98A39;
+}
+.encrypt__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.encrypt__button, .encrypt__button-copy {
+  display: block;
+  background-color: #6b2e08;
+  padding: 10px 30px;
+  border-radius: 3px;
+  border: 1px solid #FBE4D8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 10px 10px 10px 1px #000;
+          box-shadow: 10px 10px 10px 1px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  font-size: 18px;
+}
+@media (hover: hover) {
+  .encrypt__button:hover, .encrypt__button-copy:hover {
+    background-color: rgb(10, 8, 6);
+    border: 1px solid #fd9800;
+    -webkit-box-shadow: 0px 0px 10px 1px #000;
+            box-shadow: 0px 0px 10px 1px #000;
+  }
+  .encrypt__button:hover .encrypt__button-img, .encrypt__button-copy:hover .encrypt__button-img {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.encrypt__button-img {
+  aspect-ratio: 1/1;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 34px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.encrypt__text {
+  background-color: #FBE4D8;
+  min-height: 150px;
+  border: 2px solid #1D2A10;
+  min-width: 100px;
+  padding: 20px 35px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.decrypt {
+  text-align: center;
+}
+.decrypt__rotors {
+  margin-bottom: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.decrypt__block {
+  background-color: #1b1008;
+  padding: 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+}
+.decrypt__block input {
+  height: 40px;
+  width: 100px;
+  padding: 0 0 0 20px;
+  border-radius: 3px;
+  background-color: #cab246;
+  -webkit-box-shadow: 10px 10px 10px 1px #000;
+          box-shadow: 10px 10px 10px 1px #000;
+}
+.decrypt__block-wheel {
+  max-width: 300px;
+  overflow: hidden;
+  height: 150px;
+}
+.decrypt__img-wheel {
+  position: relative;
+  top: 0;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.decrypt__textarea {
+  margin-bottom: 30px;
+}
+.decrypt__textarea textarea {
+  resize: vertical;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-height: 150px;
+  background: linear-gradient(45deg, #FFE988, #A96F44);
+}
+.decrypt__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+.decrypt__button, .decrypt__button-copy {
+  display: block;
+  background-color: #431E12;
+  border: 1px solid #818181;
+  padding: 20px 30px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 10px 10px 10px 1px #000;
+          box-shadow: 10px 10px 10px 1px #000;
+}
+@media (hover: hover) {
+  .decrypt__button:hover, .decrypt__button-copy:hover {
+    background-color: #000000;
+    -webkit-box-shadow: 0px 0px 10px 1px #000;
+            box-shadow: 0px 0px 10px 1px #000;
+  }
+}
+.decrypt__button-img {
+  aspect-ratio: 1/1;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 34px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.decrypt__copy .decrypt__button-copy {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.decrypt__text {
+  background-color: #A96F44;
+  min-height: 150px;
+  min-width: 100px;
+  padding: 20px;
+  color: #000;
+  margin-bottom: 10px;
+  border: 2px solid #FBE4D8;
+}
