@@ -1,3 +1,14 @@
+// password
+let password = "derril14";
+let passwordOut = prompt("Enter a pasword:");
+if (passwordOut == password) {
+    alert("You're welcome");
+} else {
+    document.write('Wrong password');
+    window.close();
+}
+
+
 const enc = document.querySelector('.page__encrypt-display');
 enc.addEventListener('click', function () {
     document.documentElement.classList.toggle('encrypt-open');
