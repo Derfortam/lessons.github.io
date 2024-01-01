@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+
+@import url("fonts.css");
+
+@import url("reset.css");
+
+/*
+Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або 
+значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black
+*/
+
+body {
+    font-size: 18px;
+    color: #7d7d7d;
+}
+
+.head {
+    font-size: 20px;
+}
+
+h1 {
+    color: #6574fcdc;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.list-table a {
+    color: #424b9edc;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.content {}
+
+.first-info {}
+
+.chapter-1 {
+    color: #6574fcdc;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    line-height: 2;
+}
+
+.title {
+    font-family: "Poppins", sans-serif;
+    color: #37393F;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.27;
+    word-wrap: break-word;
+}
+
+.text p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #7D7D7D;
+    font-size: 18px;
+    line-height: 1.47;
+
+}
+
+.second-info {}
+
+.sub-title1 {
+    color: #6B77E5;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.27;
+    word-wrap: break-word;
+}
+
+.sub-title2 {
+    color: #37393F;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 0.8;
+    /* 40/50 */
+    word-wrap: break-word;
+}
+
+.text-1,
+.text-2,
+.text-3 {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.47;
+    word-wrap: break-word;
+}
+
+.list-1,
+.list-2 {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 2.3;
+    word-wrap: break-word
+}
+
+.sub-title4 {
+    text-shadow: 5px 5px 1px #6574fcdc;
+    color: #242529;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    /* 40/50 */
+    text-align: center;
+}
+
+.sub-title4 span {
+    text-transform: uppercase;
+}
+
+.image-1 {
+    text-align: center;
+}
+
+
+.text-cont-1>p {
+    color: rgb(72, 32, 250);
+    letter-spacing: 1px;
+    text-indent: 10px;
+    font-family: "ink", sans-serif;
+}
+
+.list-cont {
+    text-indent: 10px;
+    line-height: 1.9;
+    text-transform: lowercase;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: right;
+    word-spacing: 10px;
+}
+
+
+.text-cont-2,
+.text-cont-3 {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+
+.text-cont-2 {
+    color: #6b77e5a1;
+    font-family: "ink", sans-serif;
+    white-space: nowrap;
+}
+
+
+
+.contacts {
+    color: rgb(72, 32, 250);
+    text-align: center;
+    line-height: 1.47;
+    font-size: 24px;
+}
+
+.links {
+    text-decoration: underline;
+    color: rgb(72, 32, 250);
+}
+
+.email {
+    font-size: 23px;
+    font-family: "ink", sans-serif;
+}
+
+.email span {
+    color: #6b77e5a1;
+    text-decoration: line-through;
+}
+
+a {
+    color: #644415;
+}
+
+.email p {
+    font-family: "billie", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 2.9;
+    text-align: center;
+    color: #6574fcdc;
+    text-shadow: 20px 20px 5px #454861dc;
+}
+
+p {
+    text-align: justify;
+
+}
