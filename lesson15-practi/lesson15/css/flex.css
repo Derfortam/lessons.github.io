@@ -1,0 +1,302 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    background-color: #aaaaaa;
+    font-size: 18px;
+    font-family: Causten, sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+div[class*="_container"] {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* ======================================= */
+.header {
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+
+.header__body {}
+
+.link {
+    color: #000000;
+    font-size: 25px;
+    padding: 5px 10px;
+    background-color: yellow;
+}
+
+
+/* ======================================= */
+.page {
+    padding-top: 100px;
+}
+
+
+
+.page__body {}
+
+.page__sections {
+    margin-bottom: 100px;
+}
+
+.page__title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-7,
+.section-8,
+.section-9,
+.section-10,
+.section-11,
+.section-12,
+.section-13,
+.section-14 {
+    background-color: #4B5320;
+    border: 2px solid black;
+}
+
+.section-1__block,
+.section-2__block,
+.section-3__block,
+.section-4__block,
+.section-5__block,
+.section-6__block,
+.section-7__block,
+.section-8__block,
+.section-9__block,
+.section-10__block,
+.section-11__block,
+.section-12__block,
+.section-13__block,
+.section-14__block {
+    padding: 20px 30px;
+    background-color: #74C365;
+    border: 2px solid #fff;
+    max-width: 250px;
+}
+
+.section-1 {
+    display: flex;
+}
+
+.section-2 {
+    display: inline-flex;
+}
+
+.section-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-4 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-5 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.section-7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-6__block:nth-child(3) {}
+
+.section-8 {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    justify-content: space-around;
+}
+
+.section-9 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 20px;
+    justify-content: space-around;
+}
+
+.section-10 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-10__block:nth-child(4) {
+    align-self: self-start;
+}
+
+.section-11 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-11__block {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.section-12 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-12__block {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.section-13 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-13__block {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+
+.section-14 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-14__block:nth-child(1) {
+    order: 3;
+}
+
+.section-14__block:nth-child(2) {
+    order: 4;
+}
+
+.section-14__block:nth-child(3) {
+    order: 1;
+}
+
+.section-14__block:nth-child(4) {
+    order: 2;
+}
+
+
+/* ============================================ */
+
+.product {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.product__column {
+    max-width: 270px;
+}
+
+.product__item {}
+
+.product__img {
+    margin-bottom: 16px;
+}
+
+.product__img img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.product__body {
+    display: flex;
+}
+
+.product__content {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__title {
+    flex-grow: 1;
+}
+
+.product__link {
+    flex-grow: 1;
+}
+
+.product__text {}
+
+.product__side {}
+
+
+
+
+.box {
+    max-width: 800px;
+    background-color: #74C365;
+    padding: 20px;
+    margin-bottom: 200px;
+
+}
+
+.box__body {
+    display: flex;
+    background-color: #65adc3;
+    gap: 50px;
+}
+
+.box__item {
+    background-color: #c3c265;
+    display: flex;
+    gap: 50px;
+}
+
+.box__img {}
+
+.box__column {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+
+}
+
+.box__content {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-h2 {
+    flex-grow: 1;
+}
+
+.box__link {}
