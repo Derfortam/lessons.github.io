@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+
+
+@font-face {
+    font-family: "billie";
+    src: url("../fonts/billie-sight.woff2") format("woff2"),
+        url("../fonts/billie-sight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ink";
+    src: url("../fonts/ink-pearcer.woff2") format("woff2"),
+        url("../fonts/ink-pearcer.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Causten";
+    src: url("../fonts/Causten-Bold.woff2") format("woff2"),
+        url("../fonts/Causten-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Causten";
+    src: url("../fonts/Causten-Medium.woff2") format("woff2"),
+        url("../fonts/Causten-Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: "CoreSans";
+    src: url("../fonts/CoreSansC-55Medium.woff2") format("woff2"),
+        url("../fonts/CoreSansC-55Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+/*
+Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або 
+значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black
+*/

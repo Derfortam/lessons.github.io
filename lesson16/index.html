@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Lesson </title>
+    <link rel="shortcut icon" href="img/dun.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+
+        </header>
+
+        <main>
+
+            <div class="page">
+                <div class="page__container">
+                    <div class="page__body">
+                        <h2 class="page__title">Form 1</h2>
+
+                        <form class="page__form form" action="#" method="GET" enctype="multipart/form-data">
+
+                            <h3 class="form__title">Text</h3>
+
+                            <div class="form__box">
+                                <label for="ya-name">Enter your name:</label>
+                                <input autocomplete="on" id="ya-name" name="ya-name" placeholder="Enter your text"
+                                    type="text">
+                            </div>
+
+                            <h3 class="form__title">Email</h3>
+
+                            <div class="form__box">
+                                <label for="email">Enter your password:</label>
+                                <input autocomplete="off" required id="email" name="email"
+                                    placeholder="Enter your email" type="email">
+                            </div>
+
+                            <h3 class="form__title">Password</h3>
+
+                            <div class="form__box">
+                                <label for="pass">Enter your password:</label>
+                                <input required id="pass" minlength="6" name="pass" placeholder="Enter your password"
+                                    type="password">
+                            </div>
+
+                            <h3 class="form__title">Telephone</h3>
+
+                            <div class="form__box">
+                                <label for="tel">Enter your tel-number:</label>
+                                <input id="tel" name="tel" placeholder="Enter your tel-number" type="tel">
+                            </div>
+
+
+                            <h3 class="form__title">Color</h3>
+
+                            <div class="form__box">
+                                <label for="col">Enter your color:</label>
+                                <input id="col" name="tel" type="color">
+                            </div>
+
+
+                            <h3 class="form__title">Search</h3>
+
+                            <div class="form__box">
+                                <label for="find">Find:</label>
+                                <input id="find" name="find" type="search">
+                            </div>
+
+
+
+                            <h3 class="form__title">Date</h3>
+
+                            <div class="form__box">
+                                <label for="date">Enter your date:</label>
+                                <input id="date" name="date" type="date">
+                            </div>
+
+                            <h3 class="form__title">Range</h3>
+
+                            <div class="form__box">
+                                <label for="range">Enter your range:</label>
+                                <input id="range" name="range" type="range" min="0" max="100" value="10">
+                            </div>
+
+                            <h3 class="form__title">Checkbox</h3>
+
+                            <div class="form__box">
+                                <div>
+                                    <input value="choise" id="checkbox1" name="checkbox" type="checkbox">
+                                    <label for="checkbox1">Your checkbox 1:</label>
+                                </div>
+                                <div>
+                                    <input value="choise" id="checkbox2" name="checkbox" type="checkbox">
+                                    <label for="checkbox2">Your checkbox 2:</label>
+                                </div>
+
+                            </div>
+
+                            <h3 class="form__title">Radio</h3>
+
+                            <div class="form__box">
+                                <div>
+                                    <input value="choise-radio" id="r1" name="radio" type="radio">
+                                    <label for="r1">Your radio 1:</label>
+                                </div>
+                                <div>
+                                    <input value="choise-radio" id="r2" name="radio" type="radio">
+                                    <label for="r2">Your radio 2:</label>
+                                </div>
+
+                            </div>
+
+
+                            <h3 class="form__title">File</h3>
+
+                            <div class="form__box">
+                                <label for="file">Enter your file:</label>
+                                <input id="file" name="file" type="file" accept=".jpg" multiple>
+                            </div>
+
+                            <h3 class="form__title">Textarea</h3>
+
+                            <div class="form__box">
+                                <label for="texta">Textarea:</label>
+                                <textarea name="textarea-test" id="texta" placeholder="Message..."></textarea>
+                            </div>
+
+
+                            <h3 class="form__title">Select</h3>
+
+                            <div class="form__box">
+                                <label for="sel">Select one:</label>
+                                <select name="select-one" id="sel">
+                                    <option value="num">1</option>
+                                    <option value="num">2</option>
+                                    <option value="num">3</option>
+                                    <option value="num">4</option>
+                                    <option value="num">5</option>
+                                </select>
+                            </div>
+
+                            <div class="form__box">
+                                <button type="submit">Submit</button>
+                            </div>
+
+
+                            <fieldset>
+                                <legend>Cool Legend</legend>
+                                <p>text here</p>
+                            </fieldset>
+                        </form>
+
+
+                        <div class="page__login login">
+                            <h2 class="login__title">My Info</h2>
+                            <h3 class="login__sub-title">Add Address</h3>
+                            <form class="login__form" action="#" method="GET" enctype="multipart/form-data">
+
+                                <div class="login__field-blocks">
+                                    <div class="login__block">
+                                        <label for="name" class="login__label">Name*</label>
+                                        <div class="login__field">
+                                            <input id="name" name="name" required placeholder="First Name" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="login__block">
+                                        <label for="last-name" class="login__label">Last Name*</label>
+                                        <div class="login__field">
+                                            <input id="last-name" name="last-name" required placeholder="Last Name"
+                                                type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="login__block">
+                                        <label for="country" class="login__label">Country / Region*</label>
+                                        <div class="login__field">
+                                            <input id="country" name="country" required placeholder="Country / Region"
+                                                type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="login__block">
+                                        <label for="company" class="login__label">Company Name</label>
+                                        <div class="login__field">
+                                            <input id="company" name="company" placeholder="Company (optional)"
+                                                type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="login__block">
+                                        <label for="street" class="login__label">Street Address*</label>
+                                        <div class="login__field">
+                                            <input id="street" name="street" required
+                                                placeholder="House number and street name" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="login__block">
+                                        <label for="unit" class="login__label">Apt, suite, unit</label>
+                                        <div class="login__field">
+                                            <input id="unit" name="unit"
+                                                placeholder="apartment, suite, unit, etc. (optional)" type="text">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="login__block">
+                                        <label for="city" class="login__label">City*</label>
+                                        <div class="login__field">
+                                            <input required id="city" name="city" placeholder="Town / City" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="login__block">
+                                        <label for="state" class="login__label">State*</label>
+                                        <div class="login__field">
+                                            <select required name="state" id="state">
+
+                                                <option value="" disabled selected>State</option>
+                                                <option value="Washington">Washington</option>
+                                                <option value="California">California</option>
+                                                <option value="Arizona">Arizona</option>
+                                                <option value="Florida">Florida</option>
+                                                <option value="New York">New York</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="login__block">
+                                        <label for="phone" class="login__label">Phone*</label>
+                                        <div class="login__field">
+                                            <input required id="phone" name="phone" placeholder="Phone" type="tel">
+                                        </div>
+                                    </div>
+
+                                    <div class="login__block">
+                                        <label for="code" class="login__label">Postal Code*</label>
+                                        <div class="login__field">
+                                            <input required id="code" name="code" placeholder="Postal Code*" type="tel">
+                                        </div>
+                                    </div>
+
+                                    <div class="login__block login__block--last">
+                                        <label for="area" class="login__label">Delivery Instruction</label>
+                                        <div class="login__field">
+                                            <textarea name="area" placeholder="Delivery Instruction"
+                                                id="area"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="login__option option">
+                                    <div class="option__text">
+                                        <input id="check-1" class="checkbox__input" type="checkbox">
+                                        <label for="check-1" class="option__label"> Set as default shipping
+                                            address</label>
+                                    </div>
+                                    <div class="option__text">
+                                        <input id="check-2" class="checkbox__input" type="checkbox">
+                                        <label for="check-2" class="option__label"> Set as default billing
+                                            address</label>
+                                    </div>
+                                </div>
+
+                                <div class="login__bottons">
+                                    <button class="login__submit" type="submit">Save</button>
+                                    <button class="login__reset" type="reset">Cansel</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- !! не забудь поміняти айдішніки -->
+                        <!-- !!!! -->
+                        <!-- !!!! -->
+                        <!-- !!!! -->
+                        <!-- !!!! -->
+                        <!-- !!!! -->
+                        <!-- !!!! -->
+                        <div class="page__pay pay">
+                            <h2 class="pay__title">Check Out</h2>
+                            <h3 class="pay__sub-title">Billing Details</h3>
+                            <form class="pay__form" action="#" method="GET" enctype="multipart/form-data">
+                                <div class="pay__front-info">
+                                    <div class="pay__block">
+                                        <label for="name-2" class="pay__label">Name*</label>
+                                        <div class="pay__field">
+                                            <input id="name-2" name="name" required placeholder="First Name"
+                                                type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="pay__block">
+                                        <label for="last-name-2" class="pay__label">Last Name*</label>
+                                        <div class="pay__field">
+                                            <input id="last-name-2" name="last-name" required placeholder="Last Name"
+                                                type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="pay__block">
+                                        <label for="country-2" class="pay__label">Country / Region*</label>
+                                        <div class="pay__field">
+                                            <input id="country-2" name="country" required placeholder="Country / Region"
+                                                type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="pay__block">
+                                        <label for="company-2" class="pay__label">Company Name</label>
+                                        <div class="pay__field">
+                                            <input id="company-2" name="company" placeholder="Company (optional)"
+                                                type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="pay__block">
+                                        <label for="street-2" class="pay__label">Street Address*</label>
+                                        <div class="pay__field">
+                                            <input id="street-2" name="street" required
+                                                placeholder="House number and street name" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="pay__block">
+                                        <label for="unit-2" class="pay__label">Apt, suite, unit</label>
+                                        <div class="pay__field">
+                                            <input id="unit-2" name="unit"
+                                                placeholder="apartment, suite, unit, etc. (optional)" type="text">
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="pay__block">
+                                        <label for="city-2" class="pay__label">City*</label>
+                                        <div class="pay__field">
+                                            <input required id="city-2" name="city" placeholder="Town / City"
+                                                type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="pay__block">
+                                        <label for="state-2" class="pay__label">State*</label>
+                                        <div class="pay__field">
+                                            <select required name="state" id="state-2">
+                                                <option value="" disabled selected>State</option>
+                                                <option value="Washington">Washington</option>
+                                                <option value="California">California</option>
+                                                <option value="Arizona">Arizona</option>
+                                                <option value="Florida">Florida</option>
+                                                <option value="New York">New York</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="pay__block">
+                                        <label for="code-2" class="pay__label">Postal Code*</label>
+                                        <div class="pay__field">
+                                            <input required id="code-2" name="code" placeholder="Postal Code*"
+                                                type="tel">
+                                        </div>
+                                    </div>
+
+                                    <div class="pay__block">
+                                        <label for="phone-2" class="pay__label">Phone*</label>
+                                        <div class="pay__field">
+                                            <input required id="phone-2" name="phone" placeholder="Phone" type="tel">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pay__button">
+                                    <button class="pay__submit" type="submit">Continue to delivery</button>
+                                </div>
+
+                                <div class="pay__option option">
+                                    <div class="pay__text">
+                                        <input id="pay__check-2" value="set" class="checkbox__input-pay"
+                                            type="checkbox">
+                                        <label for="pay__check-2" class="option__label-pay"> Set as default billing
+                                            address</label>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="page__choose choose">
+                            <form class="choose__form" action="#" method="GET" enctype="multipart/form-data">
+                                <h2 class="choose__title">Shipping Address</h2>
+                                <h3 class="coose__sub-title">Select the address that matches your card or payment
+                                    method.
+                                </h3>
+                                <div class="choose__block">
+                                    <div class="choose__content">
+
+                                        <div class="choose__field">
+                                            <div class="choose__section-field">
+                                                <input id="radio-1" value="choise" name="choose__radio"
+                                                    class="choose__input" type="radio">
+                                                <label for="radio-1" class="choose__label"> Same as Billing
+                                                    address</label>
+                                            </div>
+                                            <div class="choose__section-field">
+                                                <input id="radio-2" value="choise" name="choose__radio"
+                                                    class="choose__input" type="radio">
+                                                <label for="radio-2" class="choose__label"> Use a different shipping
+                                                    address</label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <h2 class="choose__title choose__title--margin">Shipping Method</h2>
+                                <div class="choose__block">
+                                    <div class="choose__content">
+                                        <div class="choose__field">
+                                            <div class="choose__section-field">
+                                                <label class="choose__name-label">Arrives by Monday, June 7</label>
+                                            </div>
+                                            <div class="choose__section-field">
+                                                <div class="choose__table">
+                                                    <div class="choose__info-section">
+                                                        <label class="choose__name-label">Delivery Charges</label>
+                                                        <h4 class="choose__sub-title-label">Additional fess may apply
+                                                        </h4>
+                                                    </div>
+                                                    <div class="choose__price">
+                                                        $5.00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2 class="choose__title">Payment Method</h2>
+                                <h3 class="coose__sub-title">All transactions are secure and encrypted.
+                                </h3>
+                                <div class="choose__block choose__block--border">
+                                    <div class="choose__content">
+                                        <div class="choose__field">
+                                            <div class="choose__section-field">
+                                                <input id="pay-radio-1" value="pay-method" name="choose__pay-radio"
+                                                    class="choose__input" type="radio">
+                                                <label for="pay-radio-1"
+                                                    class="choose__label choose__label--before">Credit
+                                                    Card</label>
+                                                <div class="choose__sub-text">
+                                                    <h4 class="choose__head-sub-title">We accept all major credit cards.
+                                                    </h4>
+                                                </div>
+
+                                                <div class="choose__radio-content radio-content">
+                                                    <div class="radio-content__cards">
+                                                        <a href="#"> <img src="img/form1/pay.svg" alt="pay-format"></a>
+                                                        <a href="#"><img src="img/form1/visa.svg" alt="pay-format"></a>
+                                                        <a href="#"> <img src="img/form1/pal.svg" alt="pay-format"></a>
+                                                        <a href="#"> <img src="img/form1/pass.svg" alt="pay-format"></a>
+
+                                                    </div>
+                                                    <!-- <form id="form_id" class="radio-content__form" action="#" method="GET" -->
+                                                    <!-- enctype="multipart/form-data"> -->
+                                                    <div class="radio-content__form">
+                                                        <input required type="number" placeholder="Card number">
+                                                        <input required type="text" placeholder="Name of card">
+                                                        <input required type="text"
+                                                            placeholder="Expiration date (MM/YY)">
+                                                        <div class="input__eye">
+                                                            <input required type="tel" placeholder="Security Code">
+                                                            <div class="choose__eye">
+                                                                <img src="img/form1/eye.svg" alt="eye">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- </form> -->
+                                                </div>
+                                            </div>
+
+
+                                            <div class="choose__section-field">
+                                                <input id="pay-radio-2" value="pay-method" name="choose__pay-radio"
+                                                    class="choose__input" type="radio">
+                                                <label for="pay-radio-2"
+                                                    class="choose__label choose__label--before">Cash on
+                                                    delivery</label>
+                                                <div class="choose__sub-text">
+                                                    <h4 class="choose__head-sub-title">Pay with cash upon delivery.
+                                                    </h4>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="choose__section-field">
+                                                <input id="pay-radio-3" value="pay-method" name="choose__pay-radio"
+                                                    class="choose__input" type="radio">
+                                                <label for="pay-radio-3" class="choose__label">Paypal</label>
+                                            </div>
+                                            <!-- 
+                                            <div class="choose__section-field">
+                                                <input id="pay-radio-4" name="choose__pay-radio" class="choose__input"
+                                                    type="radio">
+                                                <label for="pay-radio-4" class="choose__label choose__label--before">Credit
+                                                    Card</label>
+                                                <div class="choose__sub-text">
+                                                    <h4 class="choose__head-sub-title">We accept all major credit cards.
+                                                    </h4>
+                                                </div>
+    
+                                                <div class="choose__radio-content radio-content">
+                                                    <div class="radio-content__cards">
+                                                        <a href="#"> <img src="img/form1/pay.svg" alt="pay-format"></a>
+                                                        <a href="#"><img src="img/form1/visa.svg" alt="pay-format"></a>
+                                                        <a href="#"> <img src="img/form1/pal.svg" alt="pay-format"></a>
+                                                        <a href="#"> <img src="img/form1/pass.svg" alt="pay-format"></a>
+                                                    </div>
+                                                    <form id="form_id" class="radio-content__form" action="#" method="GET"
+                                                        enctype="multipart/form-data">
+                                                        <input required type="text" placeholder="Card number">
+                                                        <input required type="text" placeholder="Name of card">
+                                                        <input required type="text" placeholder="Expiration date (MM/YY)">
+                                                        <input required type="text" placeholder="Security Code">
+                                                    </form>
+                                                </div>
+                                            </div>
+    
+    
+    
+    
+                                            <div class="choose__section-field">
+                                                <input id="pay-radio-5" name="choose__pay-radio" class="choose__input"
+                                                    type="radio">
+                                                <label for="pay-radio-5" class="choose__label choose__label--before">Cash on
+                                                    delivery</label>
+                                                <div class="choose__sub-text">
+                                                    <h4 class="choose__head-sub-title">Pay with cash upon delivery.
+                                                    </h4>
+                                                </div>
+    
+                                            </div>
+    
+    
+                                            <div class="choose__section-field">
+                                                <input id="pay-radio-6" name="choose__pay-radio" class="choose__input"
+                                                    type="radio">
+                                                <label for="pay-radio-6" class="choose__label choose__label--before">Cash on
+                                                    delivery</label>
+                                                <div class="choose__sub-text">
+                                                    <h4 class="choose__head-sub-title">Pay with cash upon delivery.
+                                                    </h4>
+                                                </div>
+                                            </div> -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="choose__pay" type="submit">Pay Now</button>
+
+                            </form>
+
+                        </div>
+
+                        <div class="page__call call">
+                            <h4 class="call__over-title">Contact Us</h4>
+                            <h2 class="call__title">Request A Call Back !</h2>
+                            <form action="#" method="GET" enctype="multipart/form-data" class="call__form">
+                                <div class="call__inputs">
+                                    <input type="text" required name="your-name" placeholder="Your Name">
+                                    <input type="email" required name="your-adress" placeholder="Your Adress">
+                                    <input type="tel" required name="your-number" placeholder="Your Number">
+                                    <input type="text" required name="your-subject" placeholder="Subject">
+                                    <div class="call__texarea">
+                                        <textarea name="message" id="last_textarea" placeholder="Message..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="call__button"><button class="call__submit" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer__container">
+                    <div class="footer__body">
+                        <h2 class="footer__title">Footer</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
