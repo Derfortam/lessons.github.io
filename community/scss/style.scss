@@ -67,6 +67,9 @@ $lightGrey: #f4f4f4;
         top: 0;
         padding: toEm(22, 20);
         z-index: 90;
+        @media(max-width: toEm(797)){
+            padding: toEm(8, 20);
+        }
     }
     // .header__container
 
@@ -138,10 +141,9 @@ $lightGrey: #f4f4f4;
         }
     }
     &__burger{
-        
         z-index: 6;
-        width: toRem(60);
-        height: toRem(40);
+        width: toRem(50);
+        height: toRem(30);
         position: relative;
         &::before,
         &::after, span{
@@ -262,7 +264,7 @@ $lightGrey: #f4f4f4;
     display: flex;
     flex-direction: column;
     @media(max-width: toEm(797)){
-        padding-top: toRem(74);
+        padding-top: toRem(51);
     }
     // .page__hero
 

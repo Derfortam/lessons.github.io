@@ -141,6 +141,11 @@ address {
   padding: 1.1em;
   z-index: 90;
 }
+@media (max-width: 49.8125em) {
+  .header--fixed {
+    padding: 0.4em;
+  }
+}
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,8 +225,8 @@ address {
 }
 .header__burger {
   z-index: 6;
-  width: 3.75rem;
-  height: 2.5rem;
+  width: 3.125rem;
+  height: 1.875rem;
   position: relative;
 }
 .header__burger::before, .header__burger::after, .header__burger span {
@@ -350,7 +355,7 @@ address {
 }
 @media (max-width: 49.8125em) {
   .page {
-    padding-top: 4.625rem;
+    padding-top: 3.1875rem;
   }
 }
 .hero {
