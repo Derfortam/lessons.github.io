@@ -1,0 +1,51 @@
+@use "sass:math";
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_functions.scss";
+.wrapper{
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.wrapper main{
+    flex-grow: 1;
+}
+//* container can changes
+[class*="__container"] {
+    max-width: toRem(1259);
+    margin: 0 auto;
+    padding: 0 toRem(15);
+}
+body{
+    background-color: #333;
+}
+// ? info
+// snippet "--" -> frontiera
+//*-----------------frontiera-----------------//
+h1{
+    font-size: toRem(40);
+    font-family: "Causten", sans-serif;
+    font-weight: 700;
+    color: yellow;
+    text-align: center;
+    padding: toRem(100);
+}
+
+// =============================================================
+// =============================================================
+//! HEADER
+//?-------------------------------------------------------------
+
+
+
+// =============================================================
+// =============================================================
+//! PAGE
+//?-------------------------------------------------------------
+
+
+// =============================================================
+// =============================================================
+//! FOOTER
+//?-------------------------------------------------------------
