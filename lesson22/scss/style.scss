@@ -286,6 +286,8 @@ $backgroundEase: #E2E2E2;
     // .header__link-address
 
     &__link-address {
+        width: 100%;
+        height: 100%;
         transition: transform 0.3s;
         @media(hover:hover){
             &:hover{
@@ -297,7 +299,10 @@ $backgroundEase: #E2E2E2;
     // .header__icon-address
 
     &__icon-address { 
-       
+       aspect-ratio: 1 / 1;
+       width: 100%;
+       height: 100%;
+       max-width: toRem(18);
     }
 
     // .header__down
@@ -406,8 +411,8 @@ $backgroundEase: #E2E2E2;
     }
     //.header__burger
     &__burger{
-        width: toEm(70,18);
-        height: toEm(50,18);
+        width: toEm(60,18);
+        height: toEm(40,18);
         display: none;
         @media(max-width: toEm(1168)){
            display: block;
@@ -466,11 +471,11 @@ $backgroundEase: #E2E2E2;
             transition: all 0.3s;
         }
         &::before{
-            top: toRem(18);
+            top: toRem(14);
             transform: rotate(45deg);
         }
         &::after{
-            bottom: toRem(18);
+            bottom: toRem(14);
             transform: rotate(-45deg);
         }
         span{
@@ -1111,6 +1116,10 @@ $backgroundEase: #E2E2E2;
     // .preview__icon
 
     &__icon {
+        flex-shrink: 0;
+        max-width: toRem(42);
+        width: 100%;
+        height: 100%;
     }
 
     // .preview__info
@@ -1279,12 +1288,11 @@ $backgroundEase: #E2E2E2;
                 }
             }
             img{
-            aspect-ratio: 434 / 501;
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.3s;
-            
+                aspect-ratio: 434 / 501;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.3s;
             }
             // max-width: toRem(434);
 		}
@@ -2398,12 +2406,12 @@ $backgroundEase: #E2E2E2;
         flex-direction: column;
         gap: toRem(15);
         @media(max-width: toEm(600)){
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: toRem(30);
-           align-items: center;
-           justify-content: center;
-           row-gap: toRem(20);
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            // gap: toRem(30);
+            // align-items: center;
+            // justify-content: center;
+            // row-gap: toRem(20);
         }
     }
 
@@ -2420,19 +2428,13 @@ $backgroundEase: #E2E2E2;
         font-family: $mainFont;
         font-weight: 400;
         line-height: 1.1;
-        text-decoration: underline;
-        text-decoration-color: transparent;
-        transition: all 0.3s;
+        transition: color 0.3s;
         @media(hover:hover){
             &:hover{
-                color: $grayColor;
-                text-decoration-color: initial;
-                //text-decoration: underline;
+                color: $greenColor;
             }
         }
-        &--checked{
-            color: $greenColor;
-        }
+
         @media(max-width: toEm(600)){
             font-size: toEm(25, 20);
         }
@@ -2485,7 +2487,7 @@ $backgroundEase: #E2E2E2;
             justify-items: end;
         }
         input{
-            height: toEm(64, 20);
+            height: toEm(58, 20);
             width: 100%;
             padding-left: toEm(27, 20);
             padding-right: toEm(12, 20);
@@ -2503,7 +2505,7 @@ $backgroundEase: #E2E2E2;
             padding: toEm(22,20) toEm(27, 20);
             background-color: $violetColor;
             color: $mainColor;
-            font-size: toEm(18, 18);
+            font-size: toEm(18, 20);
             font-family: $mainFont;
             font-weight: 600;
             text-transform: capitalize;
@@ -2513,6 +2515,10 @@ $backgroundEase: #E2E2E2;
                 &:hover{
                     background-color: $violetHover;
                 }
+            }
+            @media(max-width: toEm(420)){
+                width: 100%;
+                max-width: 100%;
             }
         }
     }
@@ -2598,8 +2604,14 @@ $backgroundEase: #E2E2E2;
     // .bottom__link
 
     &__link {
+        aspect-ratio: 1/ 1;
+        max-width: toRem(18);
+        width: 100%;
+        height: 100%;
         img{
             transition: transform 0.2s;
+            width: 100%;
+            height: 100%;
         }
     }
 }
