@@ -1,0 +1,212 @@
+@use "sass:math";
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_functions.scss";
+.wrapper{
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.wrapper main{
+    flex-grow: 1;
+}
+//* container can changes
+[class*="__container"] {
+    max-width: toRem(1259);
+    margin: 0 auto;
+    padding: 0 toRem(15);
+}
+body{
+    background-color: #333;
+    color: #fbff00;
+}
+// ? info
+// snippet "--" -> frontiera
+//*-----------------frontiera-----------------//
+
+// =============================================================
+// =============================================================
+//! BODY
+//?-------------------------------------------------------------
+.body__container{
+    padding-top: toRem(30);
+    display: flex;
+    gap: toRem(10);
+    flex-direction: column;
+    align-items: flex-start;
+    h3{
+        color:#fbff00;
+        font-size: toRem(25);
+    }
+    .add-list{
+        display: flex;
+        gap: toRem(10);
+        flex-direction: column;
+        align-items: flex-start;
+    
+        &__item{
+            color: yellow;
+            
+        }
+    }
+}
+
+
+// =============================================================
+// =============================================================
+
+
+// =============================================================
+// =============================================================
+//! HEADER
+//?-------------------------------------------------------------
+.header {
+    padding: toRem(30) 0;
+    // .header__container
+
+    &__container {
+    }
+
+    // .header__link
+
+    &__link {
+        background-color: #fbff00;
+        color: #000;
+        padding: toRem(10) toRem(20);
+        font-size: toRem(20);
+        transition: background-color 0.3s;
+        @media(hover:hover){
+            &:hover{
+                background-color: #b5b801;
+            }
+        }
+    }
+}
+
+// =============================================================
+// =============================================================
+//! PAGE
+//?-------------------------------------------------------------
+.page {
+    font-size: toRem(20);
+    font-family: "Poppins", sans-serif;
+    //color: #06ff12;
+    font-weight: 400;
+    padding-top: toRem(40);
+    padding-bottom: toRem(100);
+    // .page__container
+
+    &__container {
+        display: flex;
+        gap: toRem(25);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    // .page__title
+
+    &__title {
+        font-size: toEm(40, 20);
+        font-weight: 700;
+    }
+
+    // .page__sub-title
+
+    &__sub-title {
+        font-weight: 500;
+    }
+
+    // .page__list
+
+    &__list {
+        display: flex;
+        gap: toRem(15);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    // .page__item
+
+    &__item {
+    }
+
+    // .page__text
+
+    &__text {
+        display: flex;
+        gap: toRem(10);
+        flex-direction: column;
+        align-items: flex-start;
+        p{
+            line-height: 1.3;
+            font-size: toEm(18, 20);
+        }
+    }
+
+    // .page__link
+
+    &__link {
+        background-color: #fbff00;
+        color: #333;
+        padding: toEm(18, 20) toEm(36, 20);
+        transition: background-color 0.3s;
+        @media(hover:hover){
+            &:hover{
+                background-color: #b5b801;
+            }
+        }
+    }
+}
+
+.button{
+    color:#000;
+    background-color: #fbff00;
+    padding: toRem(15) toRem(25);
+    transition: background-color 0.3s;
+    @media(hover:hover){
+        &:hover{
+            background-color: #b5b801;
+        }
+    }
+}
+
+.link{
+    background-color: #fbff00;
+    color: #333;
+    padding: toEm(18, 20) toEm(36, 20);
+    transition: background-color 0.3s;
+    @media(hover:hover){
+        &:hover{
+            background-color: #b5b801;
+        }
+    }
+}
+
+.section {
+    display: flex;
+    gap: toRem(15);
+    flex-direction: column;
+    align-items: flex-start;color: yellow;
+    // .section__title
+
+    &__title {
+        font-size: toRem(30);
+    }
+
+}
+.list {
+    display: flex;
+    gap: toRem(10);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item {
+}
+
+
+// =============================================================
+// =============================================================
+//! FOOTER
+//?-------------------------------------------------------------
