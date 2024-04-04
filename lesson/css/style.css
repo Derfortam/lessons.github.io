@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input,
+select {
+  border-radius: 0;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+address {
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Bold.woff2") format("woff2"), url("../fonts/causten/Causten-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Semi-Bold.woff2") format("woff2"), url("../fonts/causten/Causten-Semi-Bold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Medium.woff2") format("woff2"), url("../fonts/causten/Causten-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Regular.woff2") format("woff2"), url("../fonts/causten/Causten-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/core_sans/CoreSansC-55Medium.woff2") format("woff2"), url("../fonts/core_sans/CoreSansC-55Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/core_sans/CoreSansC-65Bold.woff2") format("woff2"), url("../fonts/core_sans/CoreSansC-65Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/core_sans/CoreSansC-85Heavy.woff2") format("woff2"), url("../fonts/core_sans/CoreSansC-85Heavy.woff") format("woff");
+  font-weight: 800;
+}
+.wrapper {
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 101.875rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+body {
+  background-color: #333;
+}
+
+.galery__body {
+  font-size: clamp(31.25rem, 5vw, 0.625rem);
+  font-size: clamp(31.25rem, 5vw, 0.625rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.galery__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.9375rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  height: 32rem;
+}
+.galery__img1 {
+  -webkit-mask-image: url(../img/page/gallery/img1.png);
+          mask-image: url(../img/page/gallery/img1.png);
+  aspect-ratio: 520/354;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-width: 32.5rem;
+  height: 100%;
+}
+.galery__img2 {
+  aspect-ratio: 170/143;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-width: 10.625rem;
+  border-radius: 0.6875rem;
+  width: 32.5rem;
+}
+.galery__abs {
+  position: absolute;
+  top: 9.875rem;
+  aspect-ratio: 577/354;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 11.5625rem;
+  min-width: 36.0625rem;
+  width: 100%;
+}
+.galery__img3 {
+  position: absolute;
+  top: 9.875rem;
+  left: 11.5625rem;
+  -webkit-mask-image: url(../img/page/gallery/img2-1.png);
+          mask-image: url(../img/page/gallery/img2-1.png);
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+  aspect-ratio: 577/354;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 1.154em;
+  border-radius: 0.6875rem;
+}
+.galery__img4 {
+  -webkit-mask-image: url(../img/page/gallery/img2.png);
+          mask-image: url(../img/page/gallery/img2.png);
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+  aspect-ratio: 653/512;
+  width: 100%;
+  max-width: 40.8125rem;
+  border-radius: 0.6875rem;
+}
+.galery__img5 {
+  aspect-ratio: 390/293;
+  width: 100%;
+  max-width: 24.375rem;
+  border-radius: 0.6875rem;
+}
+.galery__img6 {
+  aspect-ratio: 390/205;
+  width: 100%;
+  max-width: 24.375rem;
+  height: 100%;
+  border-radius: 0.6875rem;
+}
+
+.a__container {
+  font-size: clamp(10px, 5vw, 80px);
+}

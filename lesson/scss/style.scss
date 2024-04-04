@@ -1,0 +1,182 @@
+@use "sass:math";
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_functions.scss";
+.wrapper{
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.wrapper main{
+    flex-grow: 1;
+}
+//* container can changes
+[class*="__container"] {
+    max-width: toRem(1630);
+    margin: 0 auto;
+    padding: 0 toRem(15);
+}
+body{
+    background-color: #333;
+}
+
+// ? info
+// snippet "--" -> frontiera
+//*-----------------frontiera-----------------//
+
+
+// =============================================================
+// =============================================================
+//! HEADER
+//?-------------------------------------------------------------
+
+
+// =============================================================
+// =============================================================
+//! PAGE
+//?-------------------------------------------------------------
+
+.galery {
+
+    // .galery__container
+
+    &__container {
+    }
+
+    // .galery__body
+
+    &__body {
+       // font-size: toRem(500);
+        //@include adaptiveValue(font-size, toRem(500), toRem(100));
+        font-size: clamp(toRem(500), 5vw, toRem(10));
+        font-size: clamp(toRem(500), 5vw, toRem(10));
+        display: flex;
+        gap: toRem(20);
+      //    justify-content: center;
+       align-items: center;
+       
+    }
+
+    &__item{
+       // flex: 0 0 toRem(520);
+        display: flex;
+        gap: toRem(15);
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        height: toRem(512);
+    }
+    // .galery__img1
+
+    &__img1 {
+        mask-image: url(../img/page/gallery/img1.png);
+        // mask-size: 100%;
+        // -webkit-mask-size: 100%;
+        aspect-ratio: 520 / 354;
+        object-fit: cover;
+        width: 100%;
+        max-width: toRem(520);
+        height: 100%;
+    }
+
+    // .galery__img2
+
+    &__img2 {
+        aspect-ratio: 170 / 143;
+        object-fit: cover;
+        width: 100%;
+        max-width: toRem(170);
+       // height: 100%;
+        border-radius: toRem(11);
+        width: toRem(520);
+    }
+    &__abs{
+        position: absolute;
+        top: toRem(158);
+        aspect-ratio: 577 / 354;
+        object-fit: cover;
+        left: toRem(185);
+        min-width: toRem(577);
+        width: 100%;
+       //height: 100%;
+    }
+
+    // .galery__img3
+
+    &__img3 {
+        position: absolute;
+        top: toRem(158);
+        left: toRem(185);
+        mask-image: url(../img/page/gallery/img2-1.png);
+        mask-size: 100%;
+        -webkit-mask-size: 100%;
+        aspect-ratio: 577 / 354;
+        object-fit: cover;
+        //width: toRem(577);
+        width: toEm(577, 500);
+       // @include adaptiveValue(width, toRem(577), toRem(100), 0, 768px, 1200px);
+        border-radius: toRem(11);
+    }
+
+    // .galery__img4
+
+    &__img4 {
+        // flex: 0 0 toRem(653);
+        mask-image: url(../img/page/gallery/img2.png);
+        mask-size: 100%;
+        -webkit-mask-size: 100%;
+        aspect-ratio: 653 / 512;
+        width: 100%;
+        max-width: toRem(653);
+       // height: 100%;
+        border-radius: toRem(11);
+      
+    }
+       // .galery__img5
+
+       &__img5 {
+        // mask-image: url(../img/page/gallery/img2-1.png);
+        // mask-size: 100%;
+        // -webkit-mask-size: 100%;
+        aspect-ratio: 390 / 293;
+        width: 100%;
+        max-width: toRem(390);
+       // height: 100%;
+        border-radius: toRem(11);
+    }
+
+       // .galery__img6
+
+       &__img6 {
+        // mask-image: url(../img/page/gallery/img2-1.png);
+        // mask-size: 100%;
+        // -webkit-mask-size: 100%;
+        aspect-ratio: 390 / 205;
+        width: 100%;
+        max-width: toRem(390);
+        height: 100%;
+        border-radius: toRem(11);
+    }
+}
+
+
+//*-----------------frontiera-----------------//
+
+.a {
+
+    // .a__container
+
+    &__container {
+        font-size: clamp(10px, 5vw, 80px);
+    }
+}
+
+
+
+
+
+// =============================================================
+// =============================================================
+//! FOOTER
+//?-------------------------------------------------------------
