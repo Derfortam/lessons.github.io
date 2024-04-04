@@ -193,7 +193,7 @@ function setRaitingStar(element, star) {
       const fullPart = parseInt(getRatingStar(star))
       const emptyPart = getRatingStar(star) - fullPart
       for (let i = 0; i < fullPart; ++i) {
-         element[i].style.background = `url('../icon/full-star.svg') 0 0 / cover no-repeat`
+         element[i].style.background = `url('../img/icon/full-star.svg') 0 0 / cover no-repeat`
       }
       if (emptyPart > 0) {
          const currentPercent = emptyPart * 100

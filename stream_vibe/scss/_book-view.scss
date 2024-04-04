@@ -315,6 +315,7 @@
       border-radius: toRem(8);
 
       flex: 0 0 toRem(56);
+      max-width: toRem(56);
    }
 
    &__content {

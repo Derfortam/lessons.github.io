@@ -2870,6 +2870,7 @@ body.menu-open {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 3.5rem;
           flex: 0 0 3.5rem;
+  max-width: 3.5rem;
 }
 .info-book__content {
   display: -webkit-box;
