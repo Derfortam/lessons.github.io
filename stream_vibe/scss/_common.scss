@@ -382,6 +382,9 @@
       justify-content: center;
       align-items: center;
       background: url("../icon/empty-star.svg") 0 0 / cover no-repeat;
+      &.active {
+         background: url("../img/icon/full-star.svg") 0 0 / cover no-repeat;
+      }
       @media (any-hover: hover) {
          &:hover {
             background: url("../icon/full-star.svg") 0 0 / cover no-repeat;

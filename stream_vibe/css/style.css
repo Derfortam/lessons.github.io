@@ -804,6 +804,9 @@ body.menu-open {
           align-items: center;
   background: url("../icon/empty-star.svg") 0 0/cover no-repeat;
 }
+.raiting__star.active {
+  background: url("../img/icon/full-star.svg") 0 0/cover no-repeat;
+}
 @media (any-hover: hover) {
   .raiting__star:hover {
     background: url("../icon/full-star.svg") 0 0/cover no-repeat;
@@ -3001,6 +3004,9 @@ body.menu-open {
 .comments__star-raiting {
   width: 1.125rem;
   height: 1.125rem;
+}
+.comments__star-raiting.active {
+  background: url("../img/icon/full-star.svg") 0 0/cover no-repeat;
 }
 .comments__text p {
   line-height: 1.5;

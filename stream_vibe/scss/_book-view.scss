@@ -403,6 +403,9 @@
    &__star-raiting {
       width: toRem(18);
       height: toRem(18);
+      &.active {
+         background: url("../img/icon/full-star.svg") 0 0 / cover no-repeat;
+      }
    }
 
    &__value {
