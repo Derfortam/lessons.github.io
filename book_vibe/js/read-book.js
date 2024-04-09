@@ -3,7 +3,7 @@ if (rootPoint) {
    initPDFViewer = () => {
       $("#pdfViewerDiv").html("")
       pdfjsLib
-         .getDocument("/web-autumn/book_vibe/book/dune.pdf")
+         .getDocument("https://derfortam.github.io/web-autumn/book_vibe/book/dune.pdf")
          .promise.then(pdfDoc => {
             console.log(pdfDoc)
             let pages = pdfDoc._pdfInfo.numPages
