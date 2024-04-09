@@ -1,5 +1,8 @@
 .genre {
    font-size: toRem(18);
+   @media (max-width: toEm(900)) {
+      font-size: toRem(16);
+   }
    color: $grey60;
 
    display: flex;
@@ -21,7 +24,7 @@
       @media (max-width: toEm(900)) {
          grid-template-columns: repeat(2, 1fr);
       }
-      @media (max-width: toEm(570)) {
+      @media (max-width: toEm(450)) {
          grid-template-columns: repeat(1, 1fr);
       }
    }
@@ -52,6 +55,9 @@
       gap: toRem(10);
       flex-wrap: wrap;
       justify-content: space-between;
+      @media (max-width: toEm(700)) {
+         flex-direction: column-reverse;
+      }
    }
 
    &__pages {

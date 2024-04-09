@@ -50,6 +50,7 @@
          border-radius: toRem(8);
          border: 1px solid $black15;
          padding: toRem(8);
+         margin-bottom: toRem(30);
       }
    }
 
@@ -117,6 +118,7 @@
    }
 
    &__body-slider {
+      height: 100%;
    }
 
    &__swiper {
@@ -126,6 +128,7 @@
    }
 
    &__slide {
+      height: 100%;
    }
 
    &__images {
@@ -138,6 +141,13 @@
    }
 
    &__name {
+      // text-align: justify;
+   }
+   &__science-name {
+      font-size: toRem(16);
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: 1px;
    }
 
    &__arrow {
@@ -185,3 +195,11 @@
 // .tablinks.active {
 //    background-color: #ddd;
 // }
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+   height: 100%;
+}
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+   height: 100%;
+}

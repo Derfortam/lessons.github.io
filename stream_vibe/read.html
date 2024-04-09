@@ -7,7 +7,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
    <!--! <link rel="shortcut icon" href="" type="image/x-icon"> -->
-   <title>All Books </title>
+   <script src=" https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.16.105/build/pdf.min.js"></script>
+   <title>Read Book</title>
 </head>
 
 <body>
@@ -51,12 +53,37 @@
       </header>
       <main class="page page--padding">
 
-         <div class="x">
-            <object data="book/dune.pdf" type="application/pdf" width="100%" height="700px">
+         <div class="page__container">
+            <!-- <object data="https://drive.google.com/file/d/1VwoiH2R1MyTaFbhmZTZrTlDiifwjs1B4/view?usp=drive_link"
+               type="application/pdf" style="color: #fff;" width="100%" height="700px">
                <p>Книгу не вдалося відобразити. Ви можете її <a href="book.pdf">скачати тут</a>.</p>
-            </object>
+            </object> -->
 
+            <!-- <embed src="https://drive.google.com/file/d/1VwoiH2R1MyTaFbhmZTZrTlDiifwjs1B4/view?usp=drive_link"
+               type="application/pdf" width="600px" height="700px" style="min-height: 600px; min-width: 300px;"> -->
+            <!-- <iframe src="https://drive.google.com/file/d/1VwoiH2R1MyTaFbhmZTZrTlDiifwjs1B4/view?usp=drive_link"
+               width="100%" height="700px"></iframe> -->
+
+
+            <!-- <div class="case">
+               <iframe class="case__iframe"
+                  src="https://docs.google.com/document/d/11W_ZkNHSfP0xRXi3YyKISEQMSzwWFcnH/edit?usp=sharing&ouid=117206997689456609097&rtpof=true&sd=true"></iframe>
+            </div> -->
+            <embed src="book/science/sc-1.docx"
+               type="application/vnd.openxmlformats-officedocument.wordprocessingml.document" width="600" height="400">
+
+
+            <div class="page__book-read book-read book-read--margin">
+               <div id="pdfViewerDiv" class="book-read__body">
+
+               </div>
+            </div>
          </div>
+
+         <!-- <div class="case">
+            <iframe
+               src="https://docs.google.com/document/d/11W_ZkNHSfP0xRXi3YyKISEQMSzwWFcnH/edit?usp=sharing&ouid=117206997689456609097&rtpof=true&sd=true"></iframe>
+         </div> -->
          <!-- <div class="book swiper">
 
             <div class="book__wrapper swiper-wrapper">
@@ -162,10 +189,6 @@
 
    <script src="js/read-book.js"></script>
    <script src="js/script.js"></script>
-   <script>
-
-
-   </script>
 </body>
 
 </html>

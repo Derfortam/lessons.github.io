@@ -1,6 +1,6 @@
 .header {
    @include adaptiveValue("padding-bottom", 30, 20);
-   @include adaptiveValue("padding-top", 30, 50);
+   @include adaptiveValue("padding-top", 30, 20);
    color: $absoluteWhite;
    @include adaptiveValue("font-size", 18, 12);
    background-color: transparent;

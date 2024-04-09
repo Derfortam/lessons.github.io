@@ -7,7 +7,7 @@
 
 window.addEventListener("scroll", function () {
    const header = document.querySelector("header")
-   if (window.scrollY > 250) {
+   if (window.scrollY > 100) {
       header.classList.add("scrolled")
    } else {
       header.classList.remove("scrolled")
@@ -31,7 +31,7 @@ function documentActions(e) {
    if (targetElement.closest(".choose-buttons__button")) {
       const chooseButton = targetElement.closest(".choose-buttons__button")
       const chooseElements = document.querySelectorAll(".choose-buttons__button")
-      chooseElements.forEach((item) => {
+      chooseElements.forEach(item => {
          item.classList.remove("active")
       })
       chooseButton.classList.toggle("active")
@@ -47,7 +47,7 @@ function documentActions(e) {
       const frequentlyItem = targetElement.closest(".frequently__item")
       //! chanhe the error
       const frequentlyElements = document.querySelectorAll(".cfrequently__item")
-      frequentlyElements.forEach((item) => {
+      frequentlyElements.forEach(item => {
          item.classList.remove("open")
       })
       frequentlyItem.classList.toggle("open")
@@ -58,7 +58,7 @@ function documentActions(e) {
       const tabElement = targetElement.closest(".tablinks")
       const allTabs = document.querySelectorAll(".tabcontent")
 
-      allTabs.forEach((item) => {
+      allTabs.forEach(item => {
          item.style.display = "none"
       })
 
@@ -67,7 +67,7 @@ function documentActions(e) {
       currentTabLink.style.display = "block"
 
       const allTablinks = document.querySelectorAll(".book-section__tablinks")
-      allTablinks.forEach((item) => {
+      allTablinks.forEach(item => {
          item.classList.remove("active")
       })
       tabElement.classList.add("active")
@@ -291,7 +291,7 @@ const oldPlaceForBookSectionOne = document.querySelector(".page__book-section")
 if (bookSectionOne && tabcontentForBookSectionOne && oldPlaceForBookSectionOne) {
    const bookSectionBeak = `(max-width: 820px)`
    const bookSectionMatchMedia = window.matchMedia(bookSectionBeak)
-   bookSectionMatchMedia.addEventListener("change", (e) => {
+   bookSectionMatchMedia.addEventListener("change", e => {
       const isTrueForBookSection = e.matches
       if (isTrueForBookSection) {
          // tabcontentForBookSectionOne.appendChild(bookSectionOne)
@@ -317,7 +317,7 @@ if ((window, innerWidth <= 820)) {
 if (bookSectionTwo && tabcontentForBookSectionTwo && oldPlaceForBookSectionTwo) {
    const bookSectionBeak = `(max-width: 820px)`
    const bookSectionMatchMedia = window.matchMedia(bookSectionBeak)
-   bookSectionMatchMedia.addEventListener("change", (e) => {
+   bookSectionMatchMedia.addEventListener("change", e => {
       const isTrueForBookSection = e.matches
       if (isTrueForBookSection) {
          // tabcontentForBookSectionTwo.appendChild(bookSectionTwo)
@@ -351,7 +351,7 @@ if (window.innerWidth <= 1400) {
 if (bookSectionLinesSwiperNavigation && bookSectionLinesSwiperNavigationOldPlace && bookSectionLinesSwiperNavigationNewPlace) {
    const bookSliderBreaKPoint = `(max-width: 1400px)`
    const bookMatchMedia = window.matchMedia(bookSliderBreaKPoint)
-   bookMatchMedia.addEventListener("change", (e) => {
+   bookMatchMedia.addEventListener("change", e => {
       const isTrueForBook = e.matches
       if (isTrueForBook) {
          for (let i = 0; i < bookSectionLinesSwiperNavigationNewPlace.length; i++) {
@@ -522,7 +522,7 @@ handleScreenSizeChange(matchMedia)
 const spollers = document.querySelectorAll(".frequently__title")
 
 if (spollers) {
-   spollers.forEach((item) => {
+   spollers.forEach(item => {
       // Встановлюємо інтервал для кожного елемента
       setInterval(() => {
          // Отримуємо наступний елемент після заголовка

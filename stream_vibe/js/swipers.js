@@ -144,6 +144,7 @@ if (scienceOurGenresSlider) {
       },
       slidesPerView: 5,
       spaceBetween: 30,
+      autoHeight: true,
       speed: 600,
       keyboard: {
          enabled: true,
@@ -188,6 +189,7 @@ if (sciencePopularTopGenres) {
       },
       slidesPerView: 5,
       spaceBetween: 30,
+      autoHeight: true,
       speed: 600,
       keyboard: {
          enabled: true,

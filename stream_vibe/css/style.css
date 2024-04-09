@@ -253,7 +253,17 @@ body.menu-open {
 }
 
 .page--padding {
-  padding-top: 12.875rem;
+  padding-top: 9.375rem;
+}
+@media (max-width: 56.25em) {
+  .page--padding {
+    padding-top: 6.25rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .page--padding {
+    padding-top: 5.625rem;
+  }
 }
 
 .button {
@@ -963,20 +973,20 @@ body.menu-open {
   }
 }
 @media (min-width: 20em) and (max-width: 75em) {
-  @supports (padding-top: clamp( 1.875rem , 3.5795454545rem  +  -2.2727272727vw , 3.125rem )) {
+  @supports (padding-top: clamp( 1.25rem , 1.0227272727rem  +  1.1363636364vw , 1.875rem )) {
     .header {
-      padding-top: clamp( 1.875rem , 3.5795454545rem  +  -2.2727272727vw , 3.125rem );
+      padding-top: clamp( 1.25rem , 1.0227272727rem  +  1.1363636364vw , 1.875rem );
     }
   }
-  @supports not (padding-top: clamp( 1.875rem , 3.5795454545rem  +  -2.2727272727vw , 3.125rem )) {
+  @supports not (padding-top: clamp( 1.25rem , 1.0227272727rem  +  1.1363636364vw , 1.875rem )) {
     .header {
-      padding-top: calc(3.125rem + -1.25 * (100vw - 20rem) / 55);
+      padding-top: calc(1.25rem + 0.625 * (100vw - 20rem) / 55);
     }
   }
 }
 @media (max-width: 20em) {
   .header {
-    padding-top: 3.125rem;
+    padding-top: 1.25rem;
   }
 }
 @media (min-width: 75em) {
@@ -1859,6 +1869,7 @@ body.menu-open {
     border-radius: 0.5rem;
     border: 1px solid #262626;
     padding: 0.5rem;
+    margin-bottom: 1.875rem;
   }
 }
 .book-section__tablinks {
@@ -1905,6 +1916,18 @@ body.menu-open {
     border-radius: 6.25rem !important;
   }
 }
+.book-section__body-slider {
+  height: 100%;
+}
+.book-section__slide {
+  height: 100%;
+}
+.book-section__science-name {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
 /* Сховати вміст всіх табів, крім першого */
 .tabcontent {
   display: none;
@@ -1912,6 +1935,16 @@ body.menu-open {
 
 .tabcontent.active {
   display: block;
+}
+
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+  height: 100%;
+}
+
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+  height: 100%;
 }
 
 .main-book-swiper {
@@ -3045,6 +3078,11 @@ body.menu-open {
           flex-direction: column;
   gap: 4.0555555556em;
 }
+@media (max-width: 56.25em) {
+  .genre {
+    font-size: 1rem;
+  }
+}
 .genre__title {
   font-weight: 700;
   color: #fff;
@@ -3068,7 +3106,7 @@ body.menu-open {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 35.625em) {
+@media (max-width: 28.125em) {
   .genre__wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -3109,6 +3147,14 @@ body.menu-open {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 43.75em) {
+  .genre__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 .genre__pages {
   font-size: 1em;
   font-weight: 600;
@@ -3137,6 +3183,28 @@ body.menu-open {
   font-size: 1.2222222222em;
   font-weight: 700;
   color: #fff;
+}
+
+.book-read {
+  width: 100%;
+  text-align: center;
+}
+.book-read--margin {
+  margin-bottom: 9.375rem;
+}
+@media (max-width: 56.25em) {
+  .book-read--margin {
+    margin-bottom: 6.25rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .book-read--margin {
+    margin-bottom: 5rem;
+  }
+}
+.book-read__body {
+  margin: 0 auto;
+  max-width: 56.25rem;
 }
 
 .book__body {
@@ -3553,6 +3621,14 @@ body.menu-open {
 #homePageCategoriesNewPlace .swiper-navigation .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 #homePageCategoriesNewPlace .swiper-navigation .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0;
+}
+
+.case {
+  width: 100%;
+}
+.case__iframe {
+  width: 100%;
+  height: 31.25rem;
 }
 
 #preloader {
