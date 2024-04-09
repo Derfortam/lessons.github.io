@@ -80,55 +80,6 @@ if (mainTab) mainTab.style.display = "block"
 
 // ==========================
 
-// обов'язково перевірку зробити чи є елемент потім
-// const categoriesSwiper = document.querySelector(".categories__slider")
-// if (categoriesSwiper) {
-//     new Swiper('.categories__slider', {
-//         // Optional parameters
-
-//         // effect: 'cards',
-//         // cardsEffect: {
-//         //     // ...
-//         // },
-
-//         pagination: {
-//             el: '.swiper-navigation__lines',
-//             clickable: true
-//         },
-
-//         navigation: {
-//             nextEl: '#next',
-//             prevEl: '#prev',
-//         },
-//         slidesPerView: 5,
-//         spaceBetween: 30,
-
-//         breakpoints: {
-//             320: {
-//                 slidesPerView: 1.5,
-//                 spaceBetween: 5
-//             },
-//             500: {
-//                 slidesPerView: 2,
-//                 spaceBetween: 10
-//             },
-//             600: {
-//                 slidesPerView: 3,
-//                 spaceBetween: 15
-//             },
-//             830: {
-//                 slidesPerView: 4,
-//                 spaceBetween: 20
-//             },
-//             1208: {
-//                 slidesPerView: 5,
-//                 spaceBetween: 30
-//             },
-
-//         }
-//     })
-// }
-
 const categoriesHomePageSwiper = document.querySelector("#homePageCategoriesSwiper")
 if (categoriesHomePageSwiper) {
    new Swiper("#homePageCategoriesSwiper", {
@@ -193,7 +144,8 @@ function setRaitingStar(element, star) {
       const fullPart = parseInt(getRatingStar(star))
       const emptyPart = getRatingStar(star) - fullPart
       for (let i = 0; i < fullPart; ++i) {
-         element[i].style.background = `url('../img/icon/full-star.svg') 0 0 / cover no-repeat`
+         // element[i].style.background = `url('../img/icon/full-star.svg') 0 0 / cover no-repeat`
+         element[i].classList.add("active")
       }
       if (emptyPart > 0) {
          const currentPercent = emptyPart * 100
