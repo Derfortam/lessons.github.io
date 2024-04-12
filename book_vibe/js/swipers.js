@@ -1,6 +1,10 @@
 const mainBookSwiper = document.querySelector("#main-book-swiper")
 if (mainBookSwiper) {
    new Swiper("#main-book-swiper", {
+        autoplay: {
+    delay: 5000, // Час (в мілісекундах) між автоматичними переключеннями
+    disableOnInteraction: false, // Вимкнути автоперемотку при взаємодії користувача зі слайдером
+  },
       loop: true,
       pagination: {
          el: ".main-book-swiper__lines",
