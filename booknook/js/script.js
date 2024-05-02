@@ -1,4 +1,4 @@
-<<<<<<<< HEAD:booknook/js/script.js
+
 "use strict"
 import {ourGenresInit, topGenresInit} from "./swipers.js"
 
