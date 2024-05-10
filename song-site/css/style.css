@@ -207,7 +207,7 @@ body {
   top: 0;
   font-size: 1.625rem;
   overflow: auto;
-  z-index: 90;
+  z-index: 99;
 }
 .song.active {
   display: block;
